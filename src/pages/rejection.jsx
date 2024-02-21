@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Button, Link, Divider, Grid } from '@mui/material';
 
 const NetlifyWelcomeEmail = ({ steps, links }) => {
-   Image = "../assets/user.png";
+   Image = "user.png";
 
   const defaultSteps = [
     {
