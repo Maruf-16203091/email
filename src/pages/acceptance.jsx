@@ -5,7 +5,7 @@ const RaycastMagicLinkEmail = ({ magicLink }) => {
     const baseUrl = "https://example.com";
 
   return (
-    <Container maxWidth="md" marginLeft="500">
+    <Container maxWidth="md" marginleft="500">
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         <Grid item xs={12} textAlign="center">
          

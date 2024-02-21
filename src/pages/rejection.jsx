@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Button, Link, Divider, Grid } from '@mui/material';
 
 const NetlifyWelcomeEmail = ({ steps, links }) => {
-    const baseUrl = "https://example.com";
+   Image = "../assets/user.png";
 
   const defaultSteps = [
     {
@@ -10,7 +10,7 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
       Description: (
         <li className="mb-20" key={1}>
           <strong>Deploy your first project.</strong>{" "}
-          <Link href="#">Connect to Git, choose a template</Link>, or manually deploy a
+          <Link href="#" underline="none">Connect to Git, choose a template</Link>, or manually deploy a
           project you've been working on locally.
         </li>
       ),
@@ -21,7 +21,7 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
         <li className="mb-20" key={2}>
           <strong>Check your deploy logs.</strong> Find out what's included in
           your build and watch for errors or failed deploys.{" "}
-          <Link href="#">Learn how to read your deploy logs</Link>.
+          <Link href="#" underline="none">Learn how to read your deploy logs</Link>.
         </li>
       ),
     },
@@ -31,7 +31,7 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
         <li className="mb-20" key={3}>
           <strong>Choose an integration.</strong> Quickly discover, connect, and
           configure the right tools for your project with 150+ integrations to
-          choose from. <Link href="#">Explore the Integrations Hub</Link>.
+          choose from. <Link href="#" underline="none">Explore the Integrations Hub</Link>.
         </li>
       ),
     },
@@ -41,7 +41,7 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
         <li className="mb-20" key={4}>
           <strong>Set up a custom domain.</strong> You can register a new domain
           and buy it through Netlify or assign a domain you already own to your
-          site. <Link href="#">Add a custom domain</Link>.
+          site. <Link href="#" underline="none">Add a custom domain</Link>.
         </li>
       ),
     },
@@ -53,8 +53,8 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
   links = links || defaultLinks;
 
   return (
-    <Container maxWidth="md">
-      <img src={`${baseUrl}/static/netlify-logo.png`} width="184" height="75" alt="Netlify" style={{ margin: 'auto', marginTop: '20px', marginBottom: '20px' }} />
+    <Container maxWidth="md" marginleft= "500px">
+      <img src={Image} width="184" height="75" alt="Netlify" style={{ margin: 'auto', marginTop: '20px', marginBottom: '20px' }} />
       <Container style={{ backgroundColor: 'white', padding: '45px' }}>
         <Typography variant="h4" align="center" gutterBottom>Welcome to Netlify</Typography>
         <Typography align="center" paragraph>
@@ -74,7 +74,7 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
         <Grid container justifyContent="center" spacing={1} style={{ marginTop: '45px' }}>
           {links.map((link, index) => (
             <Grid item key={index}>
-              <Link href="#" underline="always">{link}</Link>
+              <Link href="#" underline="none">{link}</Link>
             </Grid>
           ))}
         </Grid>
@@ -82,10 +82,10 @@ const NetlifyWelcomeEmail = ({ steps, links }) => {
       <Container style={{ marginTop: '20px' }}>
         <Grid container spacing={1}>
           <Grid item xs={6} textAlign="right">
-            <Link href="#">Unsubscribe</Link>
+            <Link href="#" underline="none">Unsubscribe</Link>
           </Grid>
           <Grid item xs={6}>
-            <Link href="#">Manage Preferences</Link>
+            <Link href="#" underline="none">Manage Preferences</Link>
           </Grid>
         </Grid>
         <Typography align="center" color="textSecondary" style={{ marginTop: '45px' }}>

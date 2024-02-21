@@ -3,7 +3,7 @@ import { Container, Typography, Grid, Button, Link, Divider } from '@mui/materia
 
 const AirbnbReviewEmail = ({
   authorName = "Maruf",
-  authorImage = "./assetes/user,png",
+  authorImage = "../assets/user.png",
   reviewText = `Maruf was a great guest! Easy communication, the apartment was left
     in great condition, very polite, and respectful of all house rules.
     He’s welcome back anytime and would easily recommend him to any
